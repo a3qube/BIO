@@ -1,0 +1,16 @@
+.experience {
+  height: 100%;
+  padding: 0px 10px;
+
+  &-header {
+    // border: 1px solid tomato;
+    display: flex;
+    height: 10%;
+
+  }
+
+  &-details {
+    // border: 1px solid turquoise;
+    height: 90%;
+  }
+}

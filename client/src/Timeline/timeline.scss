@@ -1,0 +1,18 @@
+.timeLine {
+
+  &-logo {
+    opacity: 0.4;
+  }
+
+  &-connector {
+    &--primary {
+      flex-grow: 50
+    }
+
+    &--secondary {
+      flex-grow: 1
+    }
+  }
+
+
+}

@@ -1,0 +1,26 @@
+ .headerBanner {
+   display: flex;
+   flex-direction: column;
+   height: 100%;
+   width: 100%;
+
+   &-details {
+     height: 100%;
+     border-radius: 20px;
+     box-shadow: 2px 2px 4px 0px #323e379c;
+     padding: 3% 3%;
+     @media (min-width: 768px) {
+       display: 70%;
+     }
+   }
+
+   &-dpConatiner {
+     position: relative;
+     display: none;
+     height: 30%;
+
+     @media (min-width: 768px) {
+       display: inherit
+     }
+   }
+ }

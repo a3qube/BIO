@@ -1,0 +1,55 @@
+@import '../resources/fonts';
+
+.mainParent {
+  margin: 1% auto;
+  width: 94%;
+  height: 100%;
+  padding: 10px;
+  border-radius: 15px;
+  transition: background-color 0.5s ease-out;
+
+  @media (min-width: 768px) {
+    grid-template-columns: minmax(0, 1fr) 6fr;
+    grid-template-areas: "header header"
+      "sideBar main"
+      "sideBar footer";
+    grid-template-rows: minmax(100px, 2fr) minmax(50ch, 100ch) minmax(150px, 1fr);
+  }
+
+  grid-template-areas: "header "
+  "sideBar"
+  "main"
+  "footer";
+  grid-template-columns: 1;
+
+  header {
+    @include gb-header;
+    grid-area: header;
+  }
+
+  section {
+    // border: 1px solid blue;
+    // display: none;
+    grid-area: sideBar;
+
+    @media (min-width: 768px) {
+      // display: inherit;
+    }
+  }
+
+  main {
+    // border: 1px solid rgb(0, 47, 255);
+    grid-area: main;
+    @include gb-experience;
+  }
+
+  footer {
+    // border: 1px solid green;
+    grid-area: footer;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 20px;
+  }
+}
